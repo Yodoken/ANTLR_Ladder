@@ -2,7 +2,7 @@ parser grammar ladder_parser;
 options { tokenVocab=ladder_lexer; }
 
 // Entry
-mnemonicList: mnemonic*;
+mnemonicList: endl* mnemonic*;
 
 // Mnemonic
 mnemonic: instruction operand* endl;
